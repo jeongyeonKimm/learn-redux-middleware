@@ -26,6 +26,14 @@ const SampleContainer = ({
     };
     fn();
   }, [getPost, getUsers]);
+  return (
+    <Sample
+      post={post}
+      users={users}
+      loadingPost={loadingPost}
+      loadingUsers={loadingUsers}
+    />
+  );
 };
 
 export default connect(
